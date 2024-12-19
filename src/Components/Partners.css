@@ -1,0 +1,90 @@
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Styling for the scrolling wrapper */
+.scrolling-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 10px 0;
+}
+
+/* Scrolling content will animate infinitely */
+.scrolling-content {
+  display: flex;
+  gap: 2rem;
+  animation: scroll 10s linear infinite;
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.navbar-container {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-container ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar-container ul li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* Hide sidebar on larger screens */
+@media (min-width: 769px) {
+  .sidebar-menu {
+    display: none;
+  }
+}
+
+/* Sidebar menu adjustments for small screens
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .sidebar-menu {
+    position: absolute;
+    top: 64px; 
+    right: 0;
+    bottom: 0;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease, visibility 0.3s ease;
+    background-color: white;
+    z-index: 999; /* Ensure it's on top 
+    visibility: hidden; 
+  }
+
+  .sidebar-menu.open {
+    width: 100%; /* Adjust the width as needed 
+    overflow: auto; /* Allow scrolling if needed 
+    visibility: visible; /* Make it visible when open 
+  }
+
+  .navbar-container {
+    z-index: 1000; /* Ensure the navbar is above the sidebar 
+  }
+} */
+
+  
+  
